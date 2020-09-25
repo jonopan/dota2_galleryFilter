@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Project Gallery w/ Filtering - HTML, CSS, Bootstrap, & Isotope</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="img/dota_logo.jpg" class="logo">
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12">
+                
+                <input id="myinput" type="text"  placeholder="Search..." class="form-control">
+                <ul class="filters text-center">
+                    <li class="active" data-filter="*"><a href="#!">All</a></li>
+                    <li data-filter=".carry"><a href="#!">carry</a></li>
+                    <li data-filter=".disabler"><a href="#!">disabler</a></li>
+                    <li data-filter=".support"><a href="#!">support</a></li>
+                    <li data-filter=".initiator"><a href="#!">initiator</a></li>
+                    <li data-filter=".jungler"><a href="#!">jungler</a></li>
+                    <li data-filter=".nuker"><a href="#!">nuker</a></li>
+                    <li data-filter=".pusher"><a href="#!">pusher</a></li>
+                    <li data-filter=".escape"><a href="#!">escape</a></li>
+                </ul>
+                
+                <div class="dota2">
+                   
+                    <div class="row">
+                    <!--EarthShaker-->
+                        <div class="col-lg-3 item support">
+                            
+                            <div class="card" id="card">
+                                <div class="card-head">
+								    <img src="img/hero/support/EarthShaker.jpg" alt="" class="img-fluid img-thumbnail card-img">
+									</a>
+                                    <div class="card-overlay"><h2>Earth Shaker</h2></div>
+                                    <div class="card-hover">
+                                        <p>
+                                            melee strength hero with several area of effect (AoE) disables, commonly played as a ganker or initiator.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Melee/Support</h4>
+                                    <a href="img/hero/support/EarthShaker.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    <!--Sven-->  
+                        <div class="col-lg-3 item carry">
+                            
+                            <div class="card" id="card">
+                                <div class="card-head">
+                                    <img src="img/hero/carry/sven.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                    <div class="card-overlay"><h3>Sven</h3></div>
+                                    <div class="card-hover">
+                                    <p>
+                                        versatile melee strength hero with superior physical power coupled with powerful utility abilities.
+                                    </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Melee/Carry</h4>
+                                    <a href="img/hero/carry/sven.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    <!--Tiny-->
+                        <div class="col-lg-3 item carry">
+                            <div class="card" id="card">
+                                <div class="card-head">
+                                    <img src="img/hero/carry/tiny.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                    <div class="card-overlay"><h3>Tiny</h3></div>
+                                    <div class="card-hover">
+                                        <p> melee strength hero with powerful ganking and killing potential. </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Melee/Carry</h4>
+                                    <a href="img/hero/carry/tiny.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Kunkka-->
+                        <div class="col-lg-3 item support">
+                            <div class="card" id="card">
+                                <div class="card-head">
+                                    <img src="img/hero/support/Kunkka.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                    <div class="card-overlay"><h3>Kunkka</h3></div>
+                                    <div class="card-hover">
+                                        <p>
+                                            melee strength hero built with an arsenal of powerful area-of-effect (AoE) spells.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Melee/Support</h4>
+                                    <a href="img/hero/support/Kunkka.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Beast Master-->   
+                        <div class="col-lg-3 item initiator">
+                            <div class="card" id="card">
+                                <div class="card-head">
+                                    <img src="img/hero/initiator/beastmaster.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                    <div class="card-overlay"><h3>Beast Master</h3></div>
+                                    <div class="card-hover">
+                                    <p>
+                                        versatile melee strength hero played as an offlaner and ganker who brings a good amount 
+                                        of utility to his team in any situation
+                                    </p> 
+                                     </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Melee/Initiator</h4>
+                                    <a href="img/hero/initiator/beastmaster.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Dragon Knight-->
+                        <div class="col-lg-3 item carry">
+                            <div class="card" id="card">
+                                <div class="card-head">
+                                    <img src="img/hero/carry/dragonKnight.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                    <div class="card-overlay"><h3>Dragon Knight</h3></div>
+                                    <div class="card-hover">
+                                        <p>
+                                            durable melee strength hero with a relatively straightforward and yet versatile skill set.
+                                        </p>    
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Melee/Carry</h4>
+                                    <a href="img/hero/carry/dragonKnight.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Clock Werk-->
+                        <div class="col-lg-3 item initiator">
+                            <div class="card" id="card">
+                                <div class="card-head">
+                                    <img src="img/hero/initiator/clockwerk.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                    <div class="card-overlay"><h3>Cloc kWerk</h3></div>
+                                    <div class="card-hover">
+                                       <p>
+                                        melee strength hero known as being one of the most well-rounded initiator-gankers in the game.
+                                       </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Melee/initiator</h4>
+                                    <a href="img/hero/initiator/clockwerk.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Omni Knight-->
+                        <div class="col-lg-3 item support">
+                            <div class="card" id="card">
+                                <div class="card-head">
+                                    <img src="img/hero/support/omniknight.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                    <div class="card-overlay"><h3>Omni Knight</h3></div>
+                                    <div class="card-hover">
+                                       <p>
+                                        melee strength hero who is renowned for his ability to protect his allies, preventing the enemy from easily killing them
+                                       </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h4 class="title">Melee/Support</h4>
+                                    <a href="img/hero/support/omniknight.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Huskar-->
+                    <div class="col-lg-3 item carry">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/carry/huskar.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Huskar</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged strength hero who is an effective ganker and carry, with both great benefits and risks offered.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Carry</h4>
+                                <a href="img/hero/carry/huskar.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Alchemist-->
+                    <div class="col-lg-3 item carry">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/carry/alchemist.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Alchemist</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero whose alchemical prowess makes him a strange but versatile fighter. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Carry</h4>
+                                <a href="img/hero/carry/alchemist.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Brew Master-->
+                    <div class="col-lg-3 item carry">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/carry/brewmaster.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Brew Master</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero that can fill almost any role, though he is primarily seen as a carry, ganker, tank or initiator.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Carry</h4>
+                                <a href="img/hero/carry/brewmaster.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Treant Protector-->
+                    <div class="col-lg-3 item support">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/support/treantProtector.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Treant Protector</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero who excels in supporting and strengthening his allies with his beneficial set of spells, 
+                                    which use the power of nature
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Support</h4>
+                                <a href="img/hero/support/treantProtector.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Bristle Back-->
+                    <div class="col-lg-3 item carry">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/carry/bristleback.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Bristle Back</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero famous for his array of synergistic, simplistic, and yet effective spells 
+                                    with low mana costs and cooldowns. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Carry</h4>
+                                <a href="img/hero/carry/bristleback.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Ancient Apparition-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/ancientApparition.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Ancient Apparition</h3></div>
+                                <div class="card-hover">
+                                   <p> 
+                                    ranged intelligence hero played as support. Though frail, possesses 
+                                    strong semi-spammable spells and a painful global ultimate.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/ancientApparition.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Bane-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/bane.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Bane</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero whose dark and nightmarish abilities give him prowess 
+                                    as a disabler, ganker, and nuker.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/bane.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Arc Warden-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/arcWarden.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Arc Warden</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged agility hero that requires micromanagement and farm to spiral out of control.   
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Escape</h4>
+                                <a href="img/hero/escape/arcWarden.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!--Timber Saw-->
+                     <div class="col-lg-3 item nuker">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/nuker/timbersaw.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Timber Saw</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero that excels in dealing damage and causing destruction in large areas. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Nuker</h4>
+                                <a href="img/hero/nuker/timbersaw.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Chaos Knight-->
+                    <div class="col-lg-3 item pusher">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/pusher/chaosKnight.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Chaos Knight</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero with one of the highest physical damage output ceilings of all heroes.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/pusher</h4>
+                                <a href="img/hero/pusher/chaosKnight.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Blood Seeker-->
+                    <div class="col-lg-3 item jungler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/jungler/bloodSeeker.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Blood Seeker</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee agility hero imbued with dreadful powers to fuel violence and rip enemies apart in the heat of close combat.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Jungler</h4>
+                                <a href="img/hero/jungler/bloodSeeker.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Jakiro-->
+                    <div class="col-lg-3 item pusher">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/pusher/jakiro.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Jakiro</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero who utilizes the powers of ice and fire with powerful linear area spells. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Pusher</h4>
+                                <a href="img/hero/pusher/jakiro.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Bat Rider-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/batRider.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Bat Rider</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero who excels at initiation and harassing enemies.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Pusher</h4>
+                                <a href="img/hero/escape/batRider.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Monkey King-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/monkeyKing.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Monkey King</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee agility hero, best known for his slippery nature and his ability to do Mischief, 
+                                    deceiving his enemies by turning into trees and other objects.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Escape</h4>
+                                <a href="img/hero/escape/monkeyKing.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Nature Prophet-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/natureProphet.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Nature Prophet</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero, unlike other champion. Almost can be anywhere at any given time with 
+                                    his Teleportation.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Escape</h4>
+                                <a href="img/hero/escape/natureProphet.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Legion Commander-->
+                    <div class="col-lg-3 item nuker">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/nuker/legionCommander.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Legion Commander</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    A highly mobile tanky hero, her skillset revolve mainly around killing off targets with her ultimate, Duel.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Escape</h4>
+                                <a href="img/hero/nuker/legionCommander.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Dark Willow-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/darkWillow.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Dark Willow</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero with a powerful array of disables and nukes. 
+                                    Summon a tangle of thorns to root enemies in her Bramble Maze.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/darkWillow.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Drow Ranger-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/drowRanger.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Drow Ranger</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged agility hero whose greatest assets are her incredible damage and ability to keep threats at bay. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/drowRanger.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Queen of Pain-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/queenOfPain.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Queen of Pain</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero who uses her abilities to close in and deal huge area damage to the enemy. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Escape</h4>
+                                <a href="img/hero/escape/queenOfPain.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Enigma-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/enigma.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Enigma</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero who uses his abilities to cripple his enemies, supported by a seemingly inexhaustible army of creeps.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/enigma.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Centuar Warrunner-->
+                    <div class="col-lg-3 item initiator">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/initiator/centaurWarrunner.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Centaur Warrunner</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero His abilities stop enemies around him in their tracks and inflict heavy damage.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Initiator</h4>
+                                <a href="img/hero/initiator/centaurWarrunner.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Clinkz-->
+                    <div class="col-lg-3 item carry">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/carry/clinkz.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Clinz</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged agility hero specializing in ambushing lone enemies due to his high physical damage and incredible speed.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Carry</h4>
+                                <a href="img/hero/carry/clinkz.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Juggernault-->
+                    <div class="col-lg-3 item pusher">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/pusher/juggernaut.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Clinz</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee agility hero whose abilities allow him to sprint into battle and recklessly devastate enemies in an impenetrable flurry of blades.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Pusher</h4>
+                                <a href="img/hero/pusher/juggernaut.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Rubick-->
+                    <div class="col-lg-3 item nuker">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/nuker/rubick.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Rubick</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero best known for his ability to copy the spells of his enemies and use them as his own
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Nuker</h4>
+                                <a href="img/hero/nuker/rubick.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Storm Spirit-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/stormSpirit.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Storm Spirit</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero who wields the elemental power of lightning. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Escape</h4>
+                                <a href="img/hero/escape/stormSpirit.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--GrimStroke-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/grimstroke.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>GrimStroke</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero. With an arsenal of punitive and disabling spells, he forces enemies to rethink their actions.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/grimstroke.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Mirana-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/mirana.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Mirana</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged agility hero that uses her abilities to chase, and assault enemies.an excellent huntress 
+                                    with Sacred Arrow stuns her victim.
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/mirana.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Lycan-->
+                    <div class="col-lg-3 item jungler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/jungler/lycan.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Lycan</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    Immense physical damage and considerable movement speed,excels at pushing buildings 
+                                    and bolstering his team's damage and health.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Jungler</h4>
+                                <a href="img/hero/jungler/lycan.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Undying-->
+                    <div class="col-lg-3 item nuker">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/nuker/undying.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>undying</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero capable of immense physical damage and considerable movement speed,
+                                    excels at pushing buildings , bolstering his team's damage.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Nuker</h4>
+                                <a href="img/hero/nuker/undying.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Templar Assassin-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/templarAssassin.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Templar Assassin</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    short-ranged agility hero capable of dealing huge bursts of physical damage to swathes of enemies
+                                    with expert positioning and timing.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Escape</h4>
+                                <a href="img/hero/escape/templarAssassin.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--OutWorld Devourer-->
+                    <div class="col-lg-3 item carry">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/carry/outworldDevourer.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Outworld Devourer</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    a ranged intelligence hero, unlike traditional carries, excels against high-armor targets whilst being crippled by spell immunity. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Carry</h4>
+                                <a href="img/hero/carry/outworldDevourer.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Leshrac-->
+                    <div class="col-lg-3 item pusher">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/pusher/lashrac.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Leshrac</h3></div>
+                                <div class="card-hover">
+                                   <p> ranged intelligence hero who is known for his ability to put out a tremendous amount of area magical damage. </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Pusher</h4>
+                                <a href="img/hero/pusher/lashrac.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Chen-->
+                    <div class="col-lg-3 item jungler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/jungler/chen.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Chen</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero, whose signature ability, Holy Persuasion, allows him to take control of creeps.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Jungler</h4>
+                                <a href="img/hero/jungler/chen.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Vengeful Spirit-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/vengefulSpirit.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Vengeful Spirit</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    is a ranged agility hero, possess a skillset that allows her to set up kills for her team during ganks and teamfights.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Escape</h4>
+                                <a href="img/hero/escape/vengefulSpirit.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Elder Titan-->
+                    <div class="col-lg-3 item initiator">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/initiator/elderTitan.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Elder Titan</h3></div>
+                                <div class="card-hover">
+                                    <p>
+                                        ability Astral Spirit sends forth an image of himself that damages enemies that it passes through, 
+                                        and upon returning boosts attack damage plus speed.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Initiator</h4>
+                                <a href="img/hero/initiator/elderTitan.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Oracle-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/oracle.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Oracle</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                       a ranged intelligence hero who alters the fate of allies and enemies with his combination of multipurpose nukes and buffs. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/oracle.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sand King-->
+                    <div class="col-lg-3 item jungler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/jungler/sandKing.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Sand King</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero with one of the highest area of effect (AoE) damage outputs in the entire game. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Jungler</h4>
+                                <a href="img/hero/jungler/sandKing.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Luna-->
+                    <div class="col-lg-3 item carry">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/carry/luna.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Luna</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    possesses solid early game laning presence due to her Lucent Beams, a cheap, low-cooldown nuke.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Carry</h4>
+                                <a href="img/hero/carry/luna.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Weaver-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/weaver.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Weaver</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged agility hero, renowned for being one of the hardest heroes in the game to properly 
+                                    lock down and kill, despite his extreme fragility.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Escape</h4>
+                                <a href="img/hero/escape/weaver.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Night Stalker-->
+                    <div class="col-lg-3 item nuker">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/nuker/nightStalker.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Night Stalker</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero, renowned for being a very potent ganker once night falls.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Nuker</h4>
+                                <a href="img/hero/nuker/nightStalker.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Venomancer-->
+                    <div class="col-lg-3 item pusher">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/pusher/venomancer.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Venomancer</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged agility hero who is focused on dealing damage over time and slowing enemies down.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Pusher</h4>
+                                <a href="img/hero/pusher/venomancer.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Puck-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/puck.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Puck</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    highly mobile ranged intelligence hero best known for being an extremely unpredictable and slippery target.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/puck.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Tusk-->
+                    <div class="col-lg-3 item initiator">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/initiator/tusk.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Tusk</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    melee strength hero whose array of icy disables makes him a very strong team initiator and ganker. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Initiator</h4>
+                                <a href="img/hero/initiator/tusk.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Wind Ranger-->
+                    <div class="col-lg-3 item escape">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/escape/windRanger.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Wind Ranger</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    ranged intelligence hero that uses powerful abilities in conjunction with her physical attack to take down enemies.
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Escape</h4>
+                                <a href="img/hero/escape/windRanger.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Ursa-->
+                    <div class="col-lg-3 item jungler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/jungler/ursa.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Ursa</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    increasing damage against one target. His abilities gain attack with almost maximum speed, plus 
+                                    bonus damage with each consecutive hit on a single target. 
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Melee/Jungler</h4>
+                                <a href="img/hero/jungler/ursa.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Visage-->
+                    <div class="col-lg-3 item disabler">
+                        <div class="card" id="card">
+                            <div class="card-head">
+                                <img src="img/hero/disabler/visage.jpg" alt="" class="img-fluid img-thumbnail card-img">
+                                <div class="card-overlay"><h3>Visage</h3></div>
+                                <div class="card-hover">
+                                   <p>
+                                    he bound form of Necro'lic, is a ranged intelligence hero whose traits are unusual when compared to most intelligence heroes
+                                   </p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Ranged/Disabler</h4>
+                                <a href="img/hero/disabler/visage.jpg" data-lightbox="mygallery" class="btn btn-lg card-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/script.js"></script>  
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+</body>
+</html>
